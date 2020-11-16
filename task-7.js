@@ -5,10 +5,10 @@
 // <span id="text">Абракадабра!</span>
 
 const inputRef = document.querySelector('#font-size-control')
-console.dir(inputRef);
-const textRef = document.querySelector('#text')
-console.dir(textRef);
 
-inputRef.addEventListener('input', () => {
+const textRef = document.querySelector('#text')
+
+
+const changeSize = inputRef.addEventListener('input', () => {
     textRef.style.fontSize = inputRef.value + 'px';
 });
