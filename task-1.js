@@ -8,9 +8,3 @@ const category = categoryArray.forEach((item) => {
     console.log(`Категория: ${nameCategory} \n Количество элементов: ${quantityElem}`);
 });
 
-// 2-вариант
-//     for (const category of categoryArray) {
-//         const nameCategory = category.firstElementChild.textContent;
-//         const quantityElem = category.lastElementChild.children.length;
-//         console.log(`Категория: ${nameCategory} \n Количество элементов: ${quantityElem}`);
-//     };

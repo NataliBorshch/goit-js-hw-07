@@ -21,4 +21,4 @@ const listImg = document.querySelector('#gallery');
 
 const elem = images.map(({url,alt}) => `<li><img class ='img' src ='${url}' alt ='${alt}'></li>`);
 
-listImg.insertAdjacentHTML("afterbegin", elem.join(''));//join('') убрать запятые между тегами так как они на экране
+listImg.insertAdjacentHTML("afterbegin", elem.join(''));

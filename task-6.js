@@ -16,7 +16,14 @@ const inputRef = document.querySelector("#validation-input");
 const inputLength = inputRef.getAttribute('data-length')
 
 const corect = inputRef.addEventListener("blur", () => {
-    inputRef.value.length === Number(inputLength) ? inputRef.classList.add('valid') : inputRef.classList.add('invalid');
+    if (inputRef.value.length === Number(inputLength)) {
+        inputRef.classList.add('valid');
+        inputRef.classList.remove('invalid')
+    } else {
+        inputRef.classList.add('invalid');
+         inputRef.classList.remove('valid');
+    }
+    
 });
 
 

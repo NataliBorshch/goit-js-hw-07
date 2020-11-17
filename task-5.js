@@ -4,5 +4,8 @@
 // <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
 const inputRef = document.querySelector('#name-input');
 const nameRef = document.querySelector('#name-output');
-
- const NameUser = inputRef.addEventListener('input', event => { inputRef.value === '' ? nameRef.textContent = 'незнакомец' : nameRef.textContent = event.target.value });
+ inputRef.addEventListener('input', event => {
+    if (inputRef.value === '') {
+        nameRef.textContent = 'незнакомец';
+    } else { nameRef.textContent = event.target.value } 
+});
